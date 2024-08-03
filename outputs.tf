@@ -10,11 +10,12 @@
 
 # Filename: outputs.tf
 # Description: 
-# Version: 1.1.0
+# Version: 1.2.0
 # Author: Benjamin Schneider <ich@benjamin-schneider.com>
 # Date: 2024-04-25
-# Last Modified: 2024-07-20
+# Last Modified: 2024-08-03
 # Changelog: 
+# 1.2.0 - Hcloud token, cloudflare api token
 # 1.1.0 - Add cloudflare_zones
 # 1.0.0 - Initial version 
 
@@ -54,3 +55,14 @@ output "cloudflare_zones" {
   description = "The Cloudflare zones to use for the infrastructure"
   value       = var.cloudflare_zones
 }
+
+#output "cloudflare_api_token" {
+#  description = "The Cloudflare API token to use for the infrastructure"
+#  value       = var.cloudflare_api_token
+#}
+
+#output "hcloud_token" {
+#  description = "The Hetzner Cloud API token to use for the infrastructure"
+#  value       = var.hcloud_token
+#
+#}
